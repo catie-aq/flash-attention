@@ -127,6 +127,10 @@ struct Flash_fwd_params : public Qkv_params {
     bool is_rotary_interleaved;
 
     int num_splits;  // For split-KV version
+
+    bool is_alibi;
+    float alibi_start;
+    float alibi_ratio;
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
