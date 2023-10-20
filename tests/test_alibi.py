@@ -4,7 +4,6 @@ import torch
 import torch.nn.functional as F
 from einops import rearrange, repeat
 from flash_attn import flash_attn_func
-from padding_bert import unpad_input, pad_input
 
 #torch.set_printoptions(precision=2, threshold=100000)
 torch.manual_seed(0)
